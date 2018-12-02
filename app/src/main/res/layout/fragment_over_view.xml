@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/overviewFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OverViewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tvNameMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btnIncome"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="199dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="68dp"
+        android:text="Inkomst"
+        android:textSize="24sp"
+        app:backgroundTint="@color/design_default_color_primary"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameMessage" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btnOutcome"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="199dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Utgifter"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIncome" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btnSurDef"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="199dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="64dp"
+        android:text="Överskott"
+        android:textSize="24sp"
+        app:backgroundTint="@android:color/holo_blue_light"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOutcome" />
+</android.support.constraint.ConstraintLayout>
